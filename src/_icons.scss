@@ -1,0 +1,105 @@
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+[class^="ui-grid-icon"]:before, [class*=" ui-grid-icon"]:before {
+  @extend .fa;
+}
+
+.ui-grid-icon-blank::before {
+  width: 1em;
+  content: ' ';
+}
+
+// *** TODO: replace these two
+.ui-grid-icon-plus-squared:before {
+  @extend .fa-plus-square-o;
+}
+
+.ui-grid-icon-minus-squared:before {
+  @extend .fa-minus-square-o;
+}
+// *** END here
+
+.ui-grid-icon-search:before {
+  @extend .fa-search;
+}
+
+.ui-grid-icon-cancel:before {
+  @extend .fa-times;
+}
+
+.ui-grid-icon-info-circled:before {
+  @extend .fa-info-circle;
+}
+
+.ui-grid-icon-lock:before {
+  @extend .fa-lock;
+}
+
+.ui-grid-icon-lock-open:before {
+  @extend .fa-unlock;
+}
+
+.ui-grid-icon-pencil:before {
+  @extend .fa-pencil;
+}
+
+.ui-grid-icon-down-dir:before {
+  @extend .fa-sort-desc;
+}
+
+.ui-grid-icon-up-dir:before {
+  @extend .fa-sort-asc;
+}
+
+.ui-grid-icon-left-dir:before {
+  @extend .fa-caret-left;
+}
+
+.ui-grid-icon-right-dir:before {
+  @extend .fa-caret-right;
+}
+
+.ui-grid-icon-left-open:before {
+  @extend .fa-chevron-left;
+}
+
+.ui-grid-icon-right-open:before {
+  @extend .fa-chevron-right;
+}
+
+.ui-grid-icon-angle-down:before {
+  @extend .fa-angle-down;
+}
+
+.ui-grid-icon-filter:before {
+  @extend .fa-filter;
+}
+
+.ui-grid-icon-sort-alt-up:before {
+  @extend .fa-sort-amount-asc;
+}
+
+.ui-grid-icon-sort-alt-down:before {
+  @extend .fa-sort-amount-desc;
+}
+
+.ui-grid-icon-ok:before {
+  @extend .fa-check;
+}
+
+.ui-grid-icon-menu:before {
+  @extend .fa-bars;
+}
+
+.ui-grid-icon-indent-left:before {
+  @extend .fa-dedent;
+}
+
+.ui-grid-icon-indent-right:before {
+  @extend .fa-indent;
+}
+
+.ui-grid-icon-spin5:before {
+  @extend .fa-spinner;
+  @extend .fa-spin;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ui-grid-sass",
+  "version": "0.0.1",
+  "description": "SASS implementation of the Angular UI Grid styles. Currently Angular UI Grid only provides LESS for styling. For those looking for a SASS implementation, to integrate in their own environment, this provides a 1:1 match to the existing LESS process.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "keywords": [
+    "Angular",
+    "UI-Grid",
+    "SASS"
+  ],
+  "author": "Steve 'Cutter' Blades",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "3.3.7",
+    "font-awesome": "4.7.0",
+    "gulp": "3.9.1",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.1"
+  }
+}
