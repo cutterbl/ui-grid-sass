@@ -1,5 +1,7 @@
 # UI Grid SASS
 
+[![GitHub package version](https://img.shields.io/github/package-json/v/badges/shields.svg)](https://github.com/cutterbl/ui-grid-sass.git)
+
 Currently the [Angular UI Grid](https://github.com/angular-ui/ui-grid) source files only support LESS for stylesheets.
 This project exists for those who prefer to use SASS with their projects, porting the
 current LESS to SASS.
