@@ -10,6 +10,10 @@ current LESS to SASS.
     - `@import "your/custom/variables/file";`
     - `@import "node_modules/ui-grid-sass/src/main";`
 
+## Usage With Build Tools
+You will want to include an `includePaths` statement in you build (gulp, webpack, etc) configs
+that reference your `node_modules` directory.
+
 ## Dependencies
 UI Grid SASS uses Bootstrap for styling, and Font Awesome for various icons, so your application must include those
 libraries and their dependencies. Both (bootstrap-sass and font-awesome) are active dependencies of this project, and
