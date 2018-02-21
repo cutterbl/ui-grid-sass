@@ -11,7 +11,7 @@ current LESS to SASS.
     - `@import "node_modules/ui-grid-sass/src/main";`
 
 ## Usage With Build Tools
-You will want to include an `includePaths` statement in you build (gulp, webpack, etc) configs
+You will want to include an `includePaths` statement in your build (gulp, webpack, etc) configs
 that reference your `node_modules` directory.
 
 ## Dependencies

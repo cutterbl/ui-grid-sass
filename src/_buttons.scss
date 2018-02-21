@@ -1,0 +1,36 @@
+.btn {
+  &-icon,
+  &-icon:focus {
+    outline: none;
+    background-color: #fff;
+    border-radius: 100%;
+    height: 32px;
+    padding: 3px 6px 2px;
+    width: 32px;
+    &-link,
+    &-link:hover,
+    &-link:focus {
+      background-color: transparent !important;
+      box-shadow: none;
+    }
+    &-danger,
+    &-danger:hover,
+    &-danger:focus {
+      color: red !important;
+    }
+    &-success,
+    &-success:hover,
+    &-success:focus {
+      color: #08A15C !important;
+    }
+    &-neutral,
+    &-neutral:hover,
+    &-neutral:focus {
+      color: #ccc !important;
+    }
+    &-sm {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
