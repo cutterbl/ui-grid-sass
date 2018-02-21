@@ -18,10 +18,12 @@
     "name": "Steve 'Cutter' Blades",
     "url": "http://www.cutterscrossing.com"
   },
-  "contributors": [{
-    "name": "Steve 'Cutter' Blades",
-    "url": "http://www.cutterscrossing.com"
-  }],
+  "contributors": [
+    {
+      "name": "Steve 'Cutter' Blades",
+      "url": "http://www.cutterscrossing.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "bootstrap-sass": "3.3.7",
@@ -29,5 +31,6 @@
     "gulp": "3.9.1",
     "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "2.6.1"
-  }
+  },
+  "devDependencies": {}
 }
