@@ -1,37 +1,39 @@
-.btn {
-  &-icon,
-  &-icon:focus {
-    outline: none;
-    background-color: #fff;
-    border-radius: 100%;
-    height: 32px;
-    padding: 3px 6px 2px;
-    width: 32px;
-    &-sm {
-      width: 24px;
-      height: 24px;
+.ui-grid {
+  .btn {
+    &-icon,
+    &-icon:focus {
+      outline: none;
+      background-color: #fff;
+      border-radius: 100%;
+      height: 32px;
+      padding: 3px 6px 2px;
+      width: 32px;
+      &-sm {
+        width: 24px;
+        height: 24px;
+      }
     }
-  }
-  &-icon-link,
-  &-icon-link:hover,
-  &-icon-link:focus {
-    background-color: transparent !important;
-    box-shadow: none;
-    border: 0;
-  }
-  &-icon-danger,
-  &-icon-danger:hover,
-  &-icon-danger:focus {
-    color: red !important;
-  }
-  &-icon-success,
-  &-icon-success:hover,
-  &-icon-success:focus {
-    color: #08A15C !important;
-  }
-  &-icon-neutral,
-  &-icon-neutral:hover,
-  &-icon-neutral:focus {
-    color: #ccc !important;
+    &-icon-link,
+    &-icon-link:hover,
+    &-icon-link:focus {
+      background-color: transparent !important;
+      box-shadow: none;
+      border: 0;
+    }
+    &-icon-danger,
+    &-icon-danger:hover,
+    &-icon-danger:focus {
+      color: red !important;
+    }
+    &-icon-success,
+    &-icon-success:hover,
+    &-icon-success:focus {
+      color: #08A15C !important;
+    }
+    &-icon-neutral,
+    &-icon-neutral:hover,
+    &-icon-neutral:focus {
+      color: #ccc !important;
+    }
   }
 }
