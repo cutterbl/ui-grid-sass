@@ -16,5 +16,8 @@ that reference your `node_modules` directory.
 
 ## Dependencies
 UI Grid SASS uses Bootstrap for styling, and Font Awesome for various icons, so your application must include those
-libraries and their dependencies. Both (bootstrap-sass and font-awesome) are active dependencies of this project, and
+libraries and their dependencies. Both (Bootstrap-SASS and Font-Awesome) are active dependencies of this project, and
 will automatically be available in `node_modules` once the package is installed.
+
+## Possible Breaking Changes
+See the [CHANGELOG](CHANGELOG.md) for more information.

@@ -1,7 +1,12 @@
-@import "font-awesome/scss/font-awesome";
+@import "font-awesome/scss/variables";
 
 [class^="ui-grid-icon"]:before, [class*=" ui-grid-icon"]:before {
-  @extend .fa;
+  display: inline-block;
+  font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .ui-grid-icon-blank::before {
@@ -11,95 +16,118 @@
 
 // *** TODO: replace these two
 .ui-grid-icon-plus-squared:before {
-  @extend .fa-plus-square-o;
+  content: $fa-var-plus-square-o;
 }
 
 .ui-grid-icon-minus-squared:before {
-  @extend .fa-minus-square-o;
+  content: $fa-var-minus-square-o;
 }
 // *** END here
 
 .ui-grid-icon-search:before {
-  @extend .fa-search;
+  content: $fa-var-search;
 }
 
 .ui-grid-icon-cancel:before {
-  @extend .fa-times;
+  content: $fa-var-times;
 }
 
 .ui-grid-icon-info-circled:before {
-  @extend .fa-info-circle;
+  content: $fa-var-info-circle;
 }
 
 .ui-grid-icon-lock:before {
-  @extend .fa-lock;
+  content: $fa-var-lock;
 }
 
 .ui-grid-icon-lock-open:before {
-  @extend .fa-unlock;
+  content: $fa-var-unlock;
 }
 
 .ui-grid-icon-pencil:before {
-  @extend .fa-pencil;
+  content: $fa-var-pencil;
 }
 
 .ui-grid-icon-down-dir:before {
-  @extend .fa-sort-desc;
+  content: $fa-var-sort-desc;
 }
 
 .ui-grid-icon-up-dir:before {
-  @extend .fa-sort-asc;
+  content: $fa-var-sort-asc;
 }
 
 .ui-grid-icon-left-dir:before {
-  @extend .fa-caret-left;
+  content: $fa-var-caret-left;
 }
 
 .ui-grid-icon-right-dir:before {
-  @extend .fa-caret-right;
+  content: $fa-var-caret-right;
 }
 
 .ui-grid-icon-left-open:before {
-  @extend .fa-chevron-left;
+  content: $fa-var-chevron-left;
 }
 
 .ui-grid-icon-right-open:before {
-  @extend .fa-chevron-right;
+  content: $fa-var-chevron-right;
 }
 
 .ui-grid-icon-angle-down:before {
-  @extend .fa-angle-down;
+  content: $fa-var-angle-down;
 }
 
 .ui-grid-icon-filter:before {
-  @extend .fa-filter;
+  content: $fa-var-filter;
 }
 
 .ui-grid-icon-sort-alt-up:before {
-  @extend .fa-sort-amount-asc;
+  content: $fa-var-sort-amount-asc;
 }
 
 .ui-grid-icon-sort-alt-down:before {
-  @extend .fa-sort-amount-desc;
+  content: $fa-var-sort-amount-desc;
 }
 
 .ui-grid-icon-ok:before {
-  @extend .fa-check;
+  content: $fa-var-check;
 }
 
 .ui-grid-icon-menu:before {
-  @extend .fa-bars;
+  content: $fa-var-bars;
 }
 
 .ui-grid-icon-indent-left:before {
-  @extend .fa-dedent;
+  content: $fa-var-dedent;
 }
 
 .ui-grid-icon-indent-right:before {
-  @extend .fa-indent;
+  content: $fa-var-indent;
 }
 
 .ui-grid-icon-spin5:before {
-  @extend .fa-spinner;
-  @extend .fa-spin;
+  content: $fa-var-spinner;
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+@-webkit-keyframes ui-grid-icon-spin5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes ui-grid-icon-spin5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }

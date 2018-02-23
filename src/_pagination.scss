@@ -21,13 +21,13 @@
   button {
     height: 25px;
     min-width: 26px;
-    @extend .btn;
+    @extend %bs-btn;
     @include button-variant($paginationButtonColor, $paginationButtonBackgroundColor, $paginationButtonBorderColor);
   }
 
   input {
-    @extend .form-control;
-    @extend .input-sm;
+    @extend %bs-form-control;
+    @include bs-input-sm();
     display: inline;
     height: 26px;
     width: 50px;
@@ -106,8 +106,8 @@
   float: left;
 
   select {
-    @extend .form-control;
-    @extend .input-sm;
+    @extend %bs-form-control;
+    @include bs-input-sm();
     height: 26px;
     width: 67px;
     display: inline;

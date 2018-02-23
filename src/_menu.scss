@@ -44,7 +44,7 @@
     position: absolute;
     right: 0px;
     top: 0px;
-    @extend .btn;
+    @extend %bs-btn;
     @include button-size(1px, 1px, 10px, 1, 2px);
     @include button-variant(transparent, transparent, transparent);
     > i {
