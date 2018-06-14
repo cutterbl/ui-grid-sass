@@ -39,3 +39,8 @@
   border-bottom: solid $gridBorderWidth $borderColor;
 }
 
+.ui-grid-cell-empty {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}

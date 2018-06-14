@@ -1,6 +1,6 @@
 
 .ui-grid-top-panel-background {
-  @include gradient($headerBackgroundColor, $headerGradientStart, $headerGradientStop);
+  background-color: $headerBackgroundColor;
 }
 
 $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
@@ -104,8 +104,24 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
   }
 }
 
-.ui-grid-column-menu-button-last-col {
-  margin-right: 25px;
+.ui-grid-header-cell-last-col {
+  .ui-grid-cell-contents,
+  .ui-grid-filter-container,
+  .ui-grid-column-menu-button,
+  & .ui-grid-column-resizer.right {
+    margin-right: 13px;
+  }
+}
+
+.ui-grid-render-container-right {
+  .ui-grid-header-cell-last-col {
+    .ui-grid-cell-contents,
+    .ui-grid-filter-container,
+    .ui-grid-column-menu-button,
+    & .ui-grid-column-resizer.right {
+      margin-right: 28px;
+    }
+  }
 }
 
 .ui-grid-column-menu {
@@ -115,13 +131,8 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
 /* Slide up/down animations */
 .ui-grid-column-menu .ui-grid-menu .ui-grid-menu-mid {
   &.ng-hide-add, &.ng-hide-remove {
-    @include transition(all, 0.05s, linear);
+    @include transition(all, 0.04s, linear);
     display: block !important;
-  }
-
-  &.ng-hide-add.ng-hide-add-active,
-  &.ng-hide-remove {
-    @include transform(translateY(-100%));
   }
 
   &.ng-hide-add,
@@ -133,7 +144,7 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
 /* Slide up/down animations */
 .ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid {
   &.ng-hide-add, &.ng-hide-remove {
-    @include transition(all, 0.05s, linear);
+    @include transition(all, 0.04s, linear);
     display: block !important;
   }
 
@@ -195,7 +206,8 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
 }
 
 input[type="text"].ui-grid-filter-input {
-  padding: 0;
+  box-sizing: border-box;
+  padding: 0 18px 0 0;
   margin: 0;
   border: 0;
   width: 100%;
