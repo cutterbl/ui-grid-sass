@@ -26,13 +26,13 @@
   ],
   "license": "MIT",
   "dependencies": {
+  },
+  "devDependencies": {
     "bootstrap-sass": "3.3.7",
     "font-awesome": "4.7.0",
     "gulp": "3.9.1",
     "gulp-sass": "3.1.0",
-    "gulp-sourcemaps": "2.6.1"
-  },
-  "devDependencies": {
+    "gulp-sourcemaps": "2.6.1",
     "autoprefixer": "^8.0.0",
     "gulp-postcss": "^7.0.1",
     "postcss-remove-selectors": "^2.0.0",
