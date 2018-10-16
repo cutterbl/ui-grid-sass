@@ -6,7 +6,6 @@
   @include rounded($gridBorderRadius);
 
   @include transform(translateZ(0));
-
 }
 
 .ui-grid-vertical-bar {
@@ -36,11 +35,6 @@
   width: $gridBorderWidth;
   background-color: $headerVerticalBarColor;
 }
-
-// .ui-grid-vertical-bar-visible {
-//   width: 1px;
-//   background-color: $borderColor;
-// }
 
 .ui-grid-clearfix {
   &:before, &:after {
@@ -83,4 +77,8 @@
   background-color: transparent;
   border: none;
   padding: 0;
+}
+
+.clickable {
+  cursor: pointer;
 }

@@ -74,12 +74,10 @@
       // Show a shadow when hovering over a menu item
       &:hover,
       &:focus {
-        // background-color: negation($headerBackgroundColor, #fff);
-        @include inner-shadow($vertical: 0, $blur: 14px, $alpha: 0.2);
+        background-color: $menuHoverColor;
       }
       &.ui-grid-menu-item-active {
-        @include inner-shadow($vertical: 0, $blur: 14px, $alpha: 0.2);
-        background-color: $selectedColor;
+        background-color: $menuSelectedColor;
       }
     }
   }

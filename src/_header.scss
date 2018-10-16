@@ -12,12 +12,10 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
 
 .ui-grid-top-panel {
   position: relative;
-  // border-bottom: 1px solid $borderColor; // #D4D4D4
 
   overflow: hidden;  // Disable so menus show up
   font-weight: bold;
 
-  // .gradient($headerBackgroundColor, $headerGradientStart, $headerGradientStop);
   @extend .ui-grid-top-panel-background;
 
   @include border-radius($topPanelRadius, 0, 0, $topPanelRadius);
@@ -29,31 +27,35 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
 }
 
 .ui-grid-header-canvas {
-
   // Clearfix for floating header cells
   &:before, &:after {
     content: "";
-    display: table;
+    display: -ms-flexbox;
+    display: flex;
     line-height: 0;
   }
 
   &:after {
     clear:both;
   }
-
-  // .border-radius($gridBorderRadius, 0, 0, $gridBorderRadius);
 }
 
 .ui-grid-header-cell-wrapper {
   position: relative;
-  display: table;
+  display: -ms-flexbox;
+  display: flex;
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
 }
 
 .ui-grid-header-cell-row {
-  display: table-row;
-  position: relative
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .ui-grid-header-cell {
@@ -62,7 +64,6 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
   background-color: inherit;
   border-right: $gridBorderWidth solid;
   border-color: $headerVerticalBarColor;
-  display: table-cell;
 
   &:last-child {
     border-right: 0;
@@ -86,6 +87,12 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
   }
 }
 
+/* Fixes IE word-wrap if needed on header cells */
+.ui-grid-header-cell > div {
+  -ms-flex-basis: 100%;
+  flex-basis: 100%;
+}
+
 // Make vertical bar in header row fill the height of the cell completely
 .ui-grid-header .ui-grid-vertical-bar {
   top: 0;
@@ -96,8 +103,6 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
   position: absolute;
   right: $gridBorderWidth; // So it doesn't overlay the vertical bar
   top: 0;
-  // bottom: 0;
-  // .ui-grid-top-panel-background;
 
   .ui-grid-icon-angle-down {
     vertical-align: sub;
@@ -133,6 +138,11 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
   &.ng-hide-add, &.ng-hide-remove {
     @include transition(all, 0.04s, linear);
     display: block !important;
+  }
+
+  &.ng-hide-add.ng-hide-add-active,
+  &.ng-hide-remove {
+    @include transform(translateY(-100%));
   }
 
   &.ng-hide-add,

@@ -1,4 +1,9 @@
 ## CHANGE LOG
+
+#### 16 October, 2018
+Updates to UI-Grid 4.6.3
+Changing versioning to match with UI-Grid versioning
+
 #### 23 February, 2018
 Breaking changes. Completely removes the Bootstrap and Font Awesome code from
 the compiled output. Solidifies styling based upon styles provided in:
