@@ -1,3 +1,7 @@
+/**
+ *  SASS doesn't do 'reference' files, so if you compile outside of '_main.scss', you'll
+ *  have to manually include '_variables.scss'
+ */
 .ui-grid-column-resizer {
   top: 0;
   bottom: 0;
@@ -33,6 +37,12 @@
 .ui-grid {
   &.column-resizing {
     cursor: col-resize;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
 

@@ -1,4 +1,7 @@
-
+/**
+ *  SASS doesn't do 'reference' files, so if you compile outside of '_main.scss', you'll
+ *  have to manually include '_variables.scss' and '_elements.scss'
+ */
 .ui-grid {
   border: $gridBorderWidth solid $borderColor;
   box-sizing: content-box; // If bootstrap (or another included library) makes the default sizing on element "border-box", then calculations get messed up

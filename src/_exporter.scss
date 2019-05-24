@@ -1,2 +1,6 @@
+/**
+ *  SASS doesn't do 'reference' files, so if you compile outside of '_main.scss', you'll
+ *  have to manually include '_variables.scss'
+ */
 .ui-grid-exporter-header {
 }

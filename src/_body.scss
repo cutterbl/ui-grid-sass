@@ -1,4 +1,7 @@
-
+/**
+ *  SASS doesn't do 'reference' files, so if you compile outside of '_main.scss', you'll
+ *  have to manually include '_variables.scss' and '_elements.scss' and '_header.scss'
+ */
 .ui-grid-render-container {
   position: inherit;
 
@@ -23,7 +26,7 @@
 
 .ui-grid-canvas {
   position: relative;
-  padding-top:1px; //to prevent canvas from absorbing the 1st rendered row's margin
+  padding-top: 1px; //to prevent canvas from absorbing the 1st rendered row's margin
 }
 
 .ui-grid-row {

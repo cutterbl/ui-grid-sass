@@ -1,9 +1,11 @@
 {
   "name": "ui-grid-sass",
-  "version": "4.6.4",
+  "version": "4.8.0",
   "description": "SASS implementation of the Angular UI Grid styles. Currently Angular UI Grid only provides LESS for styling. For those looking for a SASS implementation, to integrate in their own environment, this provides a 1:1 match to the existing LESS process.",
   "scripts": {
-    "build": "gulp"
+    "sass": "node-sass --importer=node_modules/node-sass-tilde-importer ./ui-grid.scss ./dist/ui-grid.css",
+    "autoprefixer": "postcss ./dist/ui-grid.css -o ./dist/ui-grid.css",
+    "build": "npm run sass && npm run autoprefixer"
   },
   "keywords": [
     "Angular",
@@ -27,14 +29,12 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "bootstrap-sass": "3.3.7",
+    "autoprefixer": "9.5.1",
+    "bootstrap-sass": "3.4.1",
     "font-awesome": "4.7.0",
-    "gulp": "3.9.1",
-    "gulp-sass": "3.1.0",
-    "gulp-sourcemaps": "2.6.1",
-    "autoprefixer": "^8.0.0",
-    "gulp-postcss": "^7.0.1",
-    "postcss-remove-selectors": "^2.0.0",
-    "postcss-scss": "^1.0.3"
+    "node-sass": "4.12.0",
+    "node-sass-tilde-importer": "1.0.2",
+    "postcss": "7.0.16",
+    "postcss-cli": "6.1.2"
   }
 }

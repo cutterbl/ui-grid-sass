@@ -1,4 +1,7 @@
-
+/**
+ *  SASS doesn't do 'reference' files, so if you compile outside of '_main.scss', you'll
+ *  have to manually include '_variables.scss' and '_elements.scss'
+ */
 .ui-grid-top-panel-background {
   background-color: $headerBackgroundColor;
 }
@@ -113,7 +116,7 @@ $topPanelRadius: $gridBorderRadius - $gridBorderWidth;
   .ui-grid-cell-contents,
   .ui-grid-filter-container,
   .ui-grid-column-menu-button,
-  & .ui-grid-column-resizer.right {
+  & + .ui-grid-column-resizer.right {
     margin-right: 13px;
   }
 }

@@ -1,6 +1,8 @@
-
-.ui-grid-render-container-left .ui-grid-row.ui-grid-row-selected > [ui-grid-row] > .ui-grid-cell,
-.ui-grid-row.ui-grid-row-focused > [ui-grid-row] > .ui-grid-cell {
+/**
+ *  SASS doesn't do 'reference' files, so if you compile outside of '_main.scss', you'll
+ *  have to manually include '_variables.scss'
+ */
+.ui-grid-row.ui-grid-row-selected > [ui-grid-row] > .ui-grid-cell {
   background-color: $rowSelected;
 }
 
@@ -15,14 +17,15 @@
 }
 
 .ui-grid-selection-row-header-buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
   cursor: pointer;
-  opacity: 0.1;
-
-  &.ui-grid-row-selected {
-    opacity: 1;
+  &::before {
+    opacity: 0.1;
   }
-
-  &.ui-grid-all-selected {
+  &.ui-grid-row-selected::before,
+  &.ui-grid-all-selected::before {
     opacity: 1;
   }
 }
