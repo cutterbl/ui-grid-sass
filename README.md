@@ -8,14 +8,18 @@ current LESS to SASS.
 - `npm install ui-grid-sass` or (preferred) `yarn add ui-grid-sass`
 - In your SASS code
     - `@import "your/custom/variables/file";`
-    - `@import "node_modules/ui-grid-sass/src/main";`
+    - `@import "~ui-grid-sass/src/main";`
+
+(Your SASS compiler may not support the `~`, for pointing to `node_modules`. If you run into this issue, Google is your friend.)
+
+The `_main.scss` file includes all pieces of UI-Grid CSS. For granular control you may include the `src/core/main` file, and any `feature` files you might require from the `features` directory. This allows you to tailor UI-Grid's CSS to include only the features your application uses.
 
 ## Usage With Build Tools
 You will want to include an `includePaths` statement in your build (gulp, webpack, etc) configs
-that reference your `node_modules` directory.
+that reference your `node_modules` directory. (This handles that `~` referenced above. Webpack sass-loader handles this automatically.)
 
 ## Dependencies
-UI Grid SASS uses Bootstrap for styling, and Font Awesome for various icons, so your application must include those
+UI Grid SASS uses Bootstrap (3.4.1) for styling, and Font Awesome (4.7.0) for various icons, so your application must include those
 libraries and their dependencies. Both (Bootstrap-SASS and Font-Awesome) are active dependencies of this project, and
 will automatically be available in `node_modules` once the package is installed.
 

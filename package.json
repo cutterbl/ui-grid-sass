@@ -36,5 +36,8 @@
     "node-sass-tilde-importer": "1.0.2",
     "postcss": "7.0.16",
     "postcss-cli": "6.1.2"
+  },
+  "resolutions": {
+    "tar": ">=4.4.2"
   }
 }

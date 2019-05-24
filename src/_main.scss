@@ -1,34 +1,10 @@
 @import 'variables';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
+// We use full path here, because node-sass-tilde-importer tried the directory instead, and bombed
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
-@import 'bootstrap/hidden';
 @import 'buttons';
 @import 'elements';
-@import 'grid';
-@import 'header';
-@import 'body';
-@import 'cell';
-@import 'footer';
-@import 'menu';
-@import 'sorting';
-@import 'icons';
-@import 'rtl';
-@import 'animation';
+@import 'core/main';
 
 // Now some specifics to various features
-@import 'cellNav';
-@import 'edit';
-@import 'emptyBaseLayer';
-@import 'expandable';
-@import 'exporter';
-@import 'grouping';
-@import 'importer';
-@import 'colMovable';
-@import 'pagination';
-@import 'pinning';
-@import 'column-resizer';
-@import 'rowEdit';
-@import 'selection';
-@import 'tree-base';
-@import 'tree-view';
-@import 'validate';
+@import 'features/all';
