@@ -6,12 +6,12 @@
 /**
 * $section Grid styles
 */
-$gridBorderWidth: 1px;
-$gridBorderRadius: 0px;
-$borderColor: #d4d4d4;
+$gridBorderWidth: 1px !default;
+$gridBorderRadius: 0px !default;
+$borderColor: #d4d4d4 !default;
 
-$focusColor: #b3c4c7;
-$activeColor: darken($focusColor, 8%);
+$focusColor: #b3c4c7 !default;
+$activeColor: darken($focusColor, 8%) !default;
 
 
 /**
@@ -19,74 +19,74 @@ $activeColor: darken($focusColor, 8%);
 */
 
 /** $description Colors for header gradient */
-$headerBackgroundColor: #f3f3f3;
-$headerGradientStart: #eee;
-$headerGradientStop: #fff;
-$headerVerticalBarColor: $borderColor;
+$headerBackgroundColor: #f3f3f3 !default;
+$headerGradientStart: #eee !default;
+$headerGradientStop: #fff !default;
+$headerVerticalBarColor: $borderColor !default;
 
 /**
 * $section Grid body styles
 */
 
 /** $description Colors used for row alternation */
-$verticalBarColor: $borderColor;
-$rowColorHovered: #d5eaee;
-$rowColorEven: #f3f3f3;
-$rowColorOdd: #fdfdfd;
+$verticalBarColor: $borderColor !default;
+$rowColorHovered: #d5eaee !default;
+$rowColorEven: #f3f3f3 !default;
+$rowColorOdd: #fdfdfd !default;
 
 /**
  *  $section Grid Menu Colors
  */
-$menuBackgroundColor: #fff;
-$menuHoverColor: $focusColor;
-$menuSelectedColor: $activeColor;
-$menuTextColor: #000;
+$menuBackgroundColor: #fff !default;
+$menuHoverColor: $focusColor !default;
+$menuSelectedColor: $activeColor !default;
+$menuTextColor: #000 !default;
 
 /**
 * $section Sort arrow colors
 */
 
-$sortArrowBackgroundColor: #aaaaaa;
-$sortArrowBorderColor: #777777;
+$sortArrowBackgroundColor: #aaaaaa !default;
+$sortArrowBorderColor: #777777 !default;
 
 
-$rowHeaderCell: #F0F0EE;
-$rowSelected: #C9DDE1;
-$rowSavingForeground: #848484;
-$rowErrorForeground: #FF0000;
-$rowDirtyForeground: #610B38;
+$rowHeaderCell: #F0F0EE !default;
+$rowSelected: #C9DDE1 !default;
+$rowSavingForeground: #848484 !default;
+$rowErrorForeground: #FF0000 !default;
+$rowDirtyForeground: #610B38 !default;
 
 // TODO: color for cell selections
-$focusedCell: $focusColor;
+$focusedCell: $focusColor !default;
 
 // Color to use for enabled or selected settings/items/cells, etc. Should probably override the one above
-$selectedColor: $activeColor;
+$selectedColor: $activeColor !default;
 
 /**
 * $section Scrollbar styles
 */
-$scrollbarBackground: darken($rowColorEven, 15%);
-$scrollbarBackgroundHover: darken($scrollbarBackground, 15%);
-$scrollbarBackgroundScrolling: darken($scrollbarBackgroundHover, 15%);
-$scrollbarWidth: 10px;
-$scrollbarBorderRadius: 2px;
-$scrollbarShadow: 0 0 0px #fff;
-$scrollbarBorder: 1px solid darken($scrollbarBackground, 15%);
-$scrollbarBorderScrolling: 1px solid darken($scrollbarBackgroundScrolling, 15%);
+$scrollbarBackground: darken($rowColorEven, 15%) !default;
+$scrollbarBackgroundHover: darken($scrollbarBackground, 15%) !default;
+$scrollbarBackgroundScrolling: darken($scrollbarBackgroundHover, 15%) !default;
+$scrollbarWidth: 10px !default;
+$scrollbarBorderRadius: 2px !default;
+$scrollbarShadow: 0 0 0px #fff !default;
+$scrollbarBorder: 1px solid darken($scrollbarBackground, 15%) !default;
+$scrollbarBorderScrolling: 1px solid darken($scrollbarBackgroundScrolling, 15%) !default;
 
 //Border to be applied to editors when the input value or invalid
-$invalidValueBorder: 1px solid #fc8f8f;
-$validValueBorder: 1px solid $borderColor;
+$invalidValueBorder: 1px solid #fc8f8f !default;
+$validValueBorder: 1px solid $borderColor !default;
 
 //Pagination controls
-$paginationButtonColor: $headerGradientStart;
-$paginationButtonBackgroundColor: $headerBackgroundColor;
-$paginationButtonBorderColor: #ccc;
+$paginationButtonColor: $headerGradientStart !default;
+$paginationButtonBackgroundColor: $headerBackgroundColor !default;
+$paginationButtonBorderColor: #ccc !default;
 
 
 /**
 * $section font library path
 */
-$font-path: 'fonts/';
+$font-path: 'fonts/' !default;
 
 /*-- END VARIABLES (DO NOT REMOVE THESE COMMENTS) --*/
